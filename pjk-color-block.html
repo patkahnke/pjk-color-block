@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`pjk-color-block`
+A practice element
+
+@demo demo/index.html 
+-->
+
+<dom-module id="pjk-color-block">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'pjk-color-block',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'pjk-color-block',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
