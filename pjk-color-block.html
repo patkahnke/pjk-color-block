@@ -4,14 +4,36 @@
 `pjk-color-block`
 A practice element
 
-@demo demo/index.html 
+@demo demo/index.html
 -->
 
 <dom-module id="pjk-color-block">
   <template>
     <style>
       :host {
-        display: block;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        border: solid 1px silver;
+        /*background-color: var(--)*/
+      }
+
+      .red {
+        background-color: red;
+        /*height: 100 px;
+        length: 40 px;*/
+      }
+
+      .blue {
+        background-color: blue;
+      }
+
+      .green {
+        background-color: green;
+      }
+
+      .yellow {
+        background-color: yellow
       }
     </style>
     <h2>Hello [[prop1]]</h2>

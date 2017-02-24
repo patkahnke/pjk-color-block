@@ -13,6 +13,9 @@
     <link rel="import" href="../pjk-color-block.html">
 
     <style is="custom-style" include="demo-pages-shared-styles">
+      pjk-color-block::shadow h2 {
+        color: red;
+      }
     </style>
   </head>
   <body>
@@ -20,6 +23,9 @@
       <h3>Basic pjk-color-block demo</h3>
       <demo-snippet>
         <template>
+          <pjk-color-block class="red"></pjk-color-block>
+          <pjk-color-block class="blue"></pjk-color-block>
+          <pjk-color-block></pjk-color-block>
           <pjk-color-block></pjk-color-block>
         </template>
       </demo-snippet>
