@@ -7,47 +7,40 @@ A practice element
 @demo demo/index.html
 -->
 
-<dom-module id="pjk-color-block">
+<dom-module id="pjk-color-block" attributes="bgColor">
   <template>
     <style>
       :host {
-        display: inline-block;
+        display: inline-block;;
         width: 200px;
         height: 200px;
         border: solid 1px silver;
-        /*background-color: var(--)*/
       }
-
-      .red {
-        background-color: red;
-        /*height: 100 px;
-        length: 40 px;*/
+      .bg-container {
+        width: inherit;
+        height: inherit;
       }
-
-      .blue {
-        background-color: blue;
-      }
-
-      .green {
-        background-color: green;
-      }
-
-      .yellow {
-        background-color: yellow
+      h2 {
+        margin: 0;
       }
     </style>
-    <h2>Hello [[prop1]]</h2>
+    <div class="bg-container" style="background-color: {{bgColor}}">
+      <h2>Hello [[prop1]]</h2>
+    </div>
   </template>
 
   <script>
     Polymer({
 
       is: 'pjk-color-block',
-
       properties: {
         prop1: {
           type: String,
           value: 'pjk-color-block',
+        },
+        bgColor: {
+          type: String,
+          value: 'red',
         },
       },
 
